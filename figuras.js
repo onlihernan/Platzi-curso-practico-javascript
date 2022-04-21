@@ -15,6 +15,8 @@ function areaCuadrado(lado){
 // console.log("El Área del cuadrado es: " + areaCuadrado + "cm2");
 console.groupEnd();
 
+
+
 // Código del triángulo
 console.group("Triangulos");
 // const ladoTriangulo1 = 6;
@@ -46,6 +48,10 @@ function areaTriangulo(altura, base) {
 // console.log("El área del triángulo es: " + areaTriangulo);
 
 console.groupEnd();
+
+
+
+
 
 //Código del círculo
 console.group("Círculos");
@@ -79,7 +85,7 @@ function areaCirculo(radio) {
 console.groupEnd;
 
 
-//Aqui interactuamos con HTML
+//Aqui interactuamos con HTML para el cuadrado
 
 function calcularPerimetroCuadrado() {
     const input = document.getElementById("InputCuadrado"); // esta variable trae el valor del ID mencioando
@@ -94,3 +100,5 @@ function calcularAreaCuadrado() {
     const area = areaCuadrado(value);
     alert(area);
 }
+
+//Aqui interactuamos con HTML para el triangulo

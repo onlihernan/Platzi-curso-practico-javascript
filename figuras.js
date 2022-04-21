@@ -91,14 +91,34 @@ function calcularPerimetroCuadrado() {
     const input = document.getElementById("InputCuadrado"); // esta variable trae el valor del ID mencioando
     const value = input.value;                              // esta variable trae el valor que el usuario colocó
     const perimetro = perimetroCuadrado(value);         // esta variable trae la funcion del perimetro del cuadrado con el valor del usuario
-    alert(perimetro);                                   // esta variable hace que aparezca un cartel con el resultado en base al valor utilizado        
+    alert("El perímetro del cuadrado es " + perimetro);                                   // esta variable hace que aparezca un cartel con el resultado en base al valor utilizado        
 }
 
 function calcularAreaCuadrado() {
     const input = document.getElementById("InputCuadrado");
     const value = input.value;
     const area = areaCuadrado(value);
-    alert(area);
+    alert("El área del cuadrado es " + area);
 }
 
 //Aqui interactuamos con HTML para el triangulo
+
+function calcularAreaTriangulo() {
+    const inputAltura = document.getElementById("InputAltura");
+    const inputBase = document.getElementById("InputBase");
+    const value4 = Number(inputAltura.value);
+    const value2 = Number(inputBase.value);
+    const area = areaTriangulo(value2, value4);
+    alert("El área del triángulo es: " + area);
+}
+
+function calcularPerimetroTriangulo() {
+    const inputLado1 = document.getElementById("InputLado1");
+    const inputLado2 = document.getElementById("InputLado2");
+    const inputBase = document.getElementById("InputBase");
+    const value1 = Number(inputLado1.value);
+    const value2 = Number(inputLado2.value);
+    const value3 = Number(inputBase.value);
+    const perimetro = perimetroTriangulo(value1, value2, value3);
+    alert("El perímetro del triángulo es: " + perimetro);
+}

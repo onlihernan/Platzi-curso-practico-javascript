@@ -122,3 +122,20 @@ function calcularPerimetroTriangulo() {
     const perimetro = perimetroTriangulo(value1, value2, value3);
     alert("El perímetro del triángulo es: " + perimetro);
 }
+
+//Aqui interactuamos con HTML para el círculo
+
+function calcularPerimetroCirculo() {
+    const input = document.getElementById("InputRadio"); // esta variable trae el valor del ID mencioando
+    const value = input.value;                              // esta variable trae el valor que el usuario colocó
+    const perimetro = perimetroCirculo(value);         // esta variable trae la funcion del perimetro del cuadrado con el valor del usuario
+    alert("El perímetro del círculo es " + perimetro);                                   // esta variable hace que aparezca un cartel con el resultado en base al valor utilizado        
+}
+
+function calcularAreaCirculo() {
+    const input = document.getElementById("InputRadio");
+    const value = input.value;
+    const area = areaCirculo(value);
+    alert("El área del círculo es " + area);
+}
+

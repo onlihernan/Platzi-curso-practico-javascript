@@ -13,6 +13,7 @@
         </h1>
         <p>Primer taller del curso práctico de JavaScript</p>
     </header>
+    <!-- Sección del cuadrado -->
     <section>
         <h2>Calcula el área y perímetro de un cuadrado</h2>
         <form>
@@ -31,6 +32,8 @@
             </button>
         </form>
     </section>
+    <!-- Fin sección del cuadrado -->
+
     <!-- sección del triángulo -->
     <section>
         <h2>Calcula el área y perímetro de un Triángulo</h2>
@@ -66,6 +69,28 @@
         </form>
     </section>
     <!-- Fin sección del triángulo -->
+
+    <!-- Sección del círculo -->
+    <section>
+        <h2>Calcula el área y perímetro de un círculo</h2>
+        <form>
+            <!-- etiquetas label e input deben tener el mismo nombre tipo e ID -->
+            <label for="InputRadio">  
+                Escribe cuánto mide el radio de tu círculo:
+            </label>
+            <input id="InputRadio" type="number"/>
+            <br/>
+            <button type="button" onclick="calcularPerimetroCirculo()">
+                calcular el perímetro
+            </button>
+            <br/>
+            <button type="button" onclick="calcularAreaCirculo()">
+                Calcular el área
+            </button>
+        </form>
+    </section>
+    <!-- Fin Sección del círculo -->
+
 <script src="./figuras.js"></script>
 
 </body>

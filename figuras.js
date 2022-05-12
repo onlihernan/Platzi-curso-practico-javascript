@@ -139,3 +139,34 @@ function calcularAreaCirculo() {
     alert("El área del círculo es " + area);
 }
 
+// RETO: Calcular la altura del triángulo
+// La función debe recibir, como parámetros, la longitud de los 3 lados del triángulo.
+// La función debe validar que la longitud de los 3 lados del triángulo corresponden a un triángulo isósceles.
+// La función debe retornar la altura del triángulo.
+
+function alturaTriangulo(ladoA, ladoB, ladoBase){
+    if (ladoA =! ladoB) {
+        console.error("Los lados a y b no son iguales");
+    } else {
+
+    }
+}
+
+function alturaTrianguloIsosceles(trianguloGrandeLadoA, trianguloGrandeladoB, trianguloGrandeLadoBase) {
+    if (trianguloGrandeLadoA != trianguloGrandeladoB) {
+        console.error("los lados a y b no son iguales");
+    } else{
+        // let trianguloPequenoLadoA;
+        const triangulopequenoLadoB = trianguloGrandeLadoBase / 2;
+        const trianguloPequenoLadoBase = trianguloGrandeLadoA;
+
+        const trianguloPequenoLadoBCuadrado = triangulopequenoLadoB * triangulopequenoLadoB;
+        const trianguloPequenoLadoBaseCuadrado = trianguloPequenoLadoBase * trianguloPequenoLadoBase;
+        const trianguloPequenoLadoA = math.sqrt(trianguloPequenoLadoBaseCuadrado - trianguloPequenoLadoBCuadrado);
+
+        const trianguloGrandeAltura = trianguloPequenoLadoA;
+        return trianguloGrandeAltura;
+    }
+
+}
+

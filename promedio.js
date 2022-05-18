@@ -14,10 +14,8 @@
 //     sumaLista1 = sumaLista1 + lista1[i];   ---> sumaLista1 es igual 
 // }
 
-
-
-
 // const promedioLista1 = sumaLista1 / lista1.length;
+
 
 
 // CALCULO DE UNA LISTA CON UNA FUNCION:
@@ -28,14 +26,13 @@ function calcularMediaAritmetica(lista) {
     //     sumaLista = sumaLista + lista[i];
     // }
 
-    const sumaLista = lista.reduce(
-         function (valorAcumulado = 0, nuevoElemento) {
+    const sumaLista = lista.reduce(                          //--> método reduce lo que hace es sumar de manera acumulativa, primero el primero y luego lo suma con el 2do, luego a estos 2 agrega el 3ro y asi sucesivamente.
+         function (valorAcumulado = 0, nuevoElemento) {      //--> valorAcumulado = 0 indica el inicio del conteo y el ", nuevoElemento" es el que se le va a agregar al valor acumulado.
             return valorAcumulado + nuevoElemento;
          }
     );
 
-    
     const promedioLista = sumaLista / lista.length; 
-    return promedioLista;
-    
+    return promedioLista;  
 }
+

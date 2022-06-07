@@ -1,6 +1,6 @@
 const colombia = [];
 
-colombia.push({
+colombia.push({     //<-- con push podemos agregar elementos a la lista del array
     name: "Juanita",
     salary: 1000,
 });
